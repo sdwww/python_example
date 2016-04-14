@@ -1,0 +1,1301 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta charset="utf-8" /><title>
+	个人健康档案
+</title><meta name="description" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="/Themes/assets/css/bootstrap.css" /><link rel="stylesheet" href="/Themes/assets/css/font-awesome.css" />
+
+    <!-- page specific plugin styles -->
+    <link rel="stylesheet" href="/Themes/assets/css/jquery-ui.css" /><link rel="stylesheet" href="/Themes/assets/css/jquery-ui.custom.css" /><link rel="stylesheet" href="/Themes/assets/css/datepicker.css" />
+
+    <!-- text fonts -->
+    <link rel="stylesheet" href="/Themes/assets/css/ace-fonts.css" />
+
+    <!-- ace styles -->
+    <link rel="stylesheet" href="/Themes/assets/css/ace.css" class="ace-main-stylesheet" /><link rel="stylesheet" href="/Themes/assets/css/custom.css" /><link rel="stylesheet" href="/images/top.css" /><link rel="stylesheet" href="/Themes/assets/css/jquery.jgrowl.min.css" />
+    <!--[if lte IE 9]>
+			<link rel="stylesheet" href="/Themes/assets/css/ace-part2.css" class="ace-main-stylesheet" />
+		<![endif]-->
+
+    <!--[if lte IE 9]>
+		  <link rel="stylesheet" href="/Themes/assets/css/ace-ie.css" />
+		<![endif]-->
+
+    <!-- inline styles related to this page -->
+
+    <!-- ace settings handler -->
+    <script src="/Themes/assets/js/ace-extra.js"></script>
+
+    <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+    <!--[if lte IE 8]>
+		<script src="/Themes/assets/js/html5shiv.js"></script>
+		<script src="/Themes/assets/js/respond.js"></script>
+		<![endif]-->
+
+    <!-- basic scripts -->
+
+    <!--[if !IE]> -->
+    <script type="text/javascript">
+        window.jQuery || document.write("<script src='/Themes/assets/js/jquery.js'>" + "<" + "/script>");
+    </script>
+    <script src="/Themes/assets/js/jquery.js"></script>
+    <!-- <![endif]-->
+
+    <!--[if IE]>
+        <script type="text/javascript">
+         window.jQuery || document.write("<script src='/Themes/assets/js/jquery1x.js'>"+"<"+"/script>");
+        </script>
+    <![endif]-->
+
+    <script src="/Themes/assets/js/bootstrap.js"></script>
+
+    <!-- ace scripts -->
+    <script src="/Themes/assets/js/jquery-ui.js"></script>
+    <script src="/Themes/assets/js/jquery.ui.touch-punch.js"></script>
+    <script src="/Themes/assets/js/jquery.maskedinput.js"></script>
+    <script src="/Themes/assets/js/jquery.validate.js"></script>
+    <script src="/Themes/assets/js/additional-methods.js"></script>
+    <script src="/Themes/assets/js/jquery.jgrowl.min.js"></script>
+    <script src="/Themes/assets/js/bootbox.js"></script>
+
+    <script src="/Themes/assets/js/date-time/bootstrap-datepicker.js"></script>
+    <script src="/Themes/assets/js/ace/elements.scroller.js"></script>
+    <script src="/Themes/assets/js/ace/elements.colorpicker.js"></script>
+    <script src="/Themes/assets/js/ace/elements.fileinput.js"></script>
+    <script src="/Themes/assets/js/ace/elements.typeahead.js"></script>
+    <script src="/Themes/assets/js/ace/elements.wysiwyg.js"></script>
+    <script src="/Themes/assets/js/ace/elements.spinner.js"></script>
+    <script src="/Themes/assets/js/ace/elements.treeview.js"></script>
+    <script src="/Themes/assets/js/ace/elements.wizard.js"></script>
+    <script src="/Themes/assets/js/ace/elements.aside.js"></script>
+    <script src="/Themes/assets/js/ace/ace.js"></script>
+    <script src="/Themes/assets/js/ace/ace.ajax-content.js"></script>
+    <script src="/Themes/assets/js/ace/ace.touch-drag.js"></script>
+    <script src="/Themes/assets/js/ace/ace.sidebar.js"></script>
+    <script src="/Themes/assets/js/ace/ace.sidebar-scroll-1.js"></script>
+    <script src="/Themes/assets/js/ace/ace.submenu-hover.js"></script>
+    <script src="/Themes/assets/js/ace/ace.widget-box.js"></script>
+    <script src="/Themes/assets/js/ace/ace.settings.js"></script>
+    <script src="/Themes/assets/js/ace/ace.settings-rtl.js"></script>
+    <script src="/Themes/assets/js/ace/ace.settings-skin.js"></script>
+    <script src="/Themes/assets/js/ace/ace.widget-on-reload.js"></script>
+    <script src="/Themes/assets/js/ace/ace.searchbox-autocomplete.js"></script>
+
+    <script src="/Themes/assets/js/custom.js"></script>
+
+    
+
+    
+<link href="/WebResource.axd?d=gFmW6qNFpPndxCUoeWRnvBgfajvurAgUhOWvOZZKCCf0p9jXPSJNYrNhg87Qfsv2ZwT6kJXx6NtGRBcs7QD3XYadswjycGtZlrFWcKxu6yxsq1ovHwo3YtwiJeUHnlUA6hZhsctwSeeG1x21RbywAw2&amp;t=635798951633420000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=-MZ6D-lCh4YypDmgfRIDH2FEcQSNz012nQzMydiRk2Cwur8rTBWrJ3rsuUEBs03OrdyV38r_M41b-E0lRm0JaM0OyB3RVy9aZEcjmiURFpgrmPOxh93-UQc7k9TX8Ns4x3H2EKyKzqh8Hdoix_9_MIsnYdokP4vvDnEeeg09vWg1&amp;t=635718162944060000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /></head>
+<body class="no-skin">
+    <form name="aspnetForm" method="post" action="grjkdaxx.aspx?DAH=3708321124000444" id="aspnetForm">
+<input type="hidden" name="ctl00_RadScriptManager1_TSM" id="ctl00_RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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MS0xMi0yMB8IaB8GAgJkZAIBDxQrAAIPFgIfCGhkZGQCTw9kFgQCAQ9kFgRmDw8WAh8CBRblgaXlurfmoaPmoYgt6ZmI5piO5rabZGQCAQ8UKwACDxYCHwhoZGRkAgMPZBYEZg8PFgIfAgUb6ams6JCl5Lmh5p2o5bGv5p2R5Y2r55Sf5a6kZGQCAQ8UKwACDxYCHwhoZGRkAlEPZBYEAgEPFgIeBmlzSkREVwUFRmFsc2VkAgMPFgIeBWlzbmV3BQVmYWxzZWQYAgUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFhYFJGN0bDAwJHBhZ2VfQ29udGVudCR5bHpmeHMkY2hrTGlzdDEkMAUkY3RsMDAkcGFnZV9Db250ZW50JHlsemZ4cyRjaGtMaXN0MSQxBSRjdGwwMCRwYWdlX0NvbnRlbnQkeWx6ZnhzJGNoa0xpc3QxJDIFJGN0bDAwJHBhZ2VfQ29udGVudCR5bHpmeHMkY2hrTGlzdDEkMwUkY3RsMDAkcGFnZV9Db250ZW50JHlsemZ4cyRjaGtMaXN0MSQ0BSRjdGwwMCRwYWdlX0NvbnRlbnQkeWx6ZnhzJGNoa0xpc3QxJDUFJGN0bDAwJHBhZ2VfQ29udGVudCR5bHpmeHMkY2hrTGlzdDEkNgUkY3RsMDAkcGFnZV9Db250ZW50JHlsemZ4cyRjaGtMaXN0MSQ3BS1jdGwwMCRwYWdlX0NvbnRlbnQkZ3VvbWluZ3NoaSRjdGIxJGNoa0xpc3QxJDAFLWN0bDAwJHBhZ2VfQ29udGVudCRndW9taW5nc2hpJGN0YjEkY2hrTGlzdDEkMQUtY3RsMDAkcGFnZV9Db250ZW50JGd1b21pbmdzaGkkY3RiMSRjaGtMaXN0MSQyBS1jdGwwMCRwYWdlX0NvbnRlbnQkZ3VvbWluZ3NoaSRjdGIxJGNoa0xpc3QxJDMFLWN0bDAwJHBhZ2VfQ29udGVudCRndW9taW5nc2hpJGN0YjEkY2hrTGlzdDEkNAUiY3RsMDAkcGFnZV9Db250ZW50JGNqcWskY2hrTGlzdDEkMAUiY3RsMDAkcGFnZV9Db250ZW50JGNqcWskY2hrTGlzdDEkMQUiY3RsMDAkcGFnZV9Db250ZW50JGNqcWskY2hrTGlzdDEkMgUiY3RsMDAkcGFnZV9Db250ZW50JGNqcWskY2hrTGlzdDEkMwUiY3RsMDAkcGFnZV9Db250ZW50JGNqcWskY2hrTGlzdDEkNAUiY3RsMDAkcGFnZV9Db250ZW50JGNqcWskY2hrTGlzdDEkNQUiY3RsMDAkcGFnZV9Db250ZW50JGNqcWskY2hrTGlzdDEkNgUiY3RsMDAkcGFnZV9Db250ZW50JGNqcWskY2hrTGlzdDEkNwUiY3RsMDAkcGFnZV9Db250ZW50JGNqcWskY2hrTGlzdDEkOAURY3RsMDAkU2tpbkNob29zZXIPFCsAAmUFCFdpbmRvd3M3ZO2Z79bnBsGF8i+qkCd4WVoYBZ0t2ShGwcP+zIgWFQ6y" />
+
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3azh-CN%3ac9cbdec3-c810-4e87-846c-fb25a7c08002%3aea597d4b%3bTelerik.Web.UI%2c+Version%3d2015.2.623.40%2c+Culture%3dneutral%2c+PublicKeyToken%3d50ac9ef04a916b01%3azh-CN%3af0453d2d-e413-4b66-a599-3105257b1bd9%3a16e4e7cd%3aed16cbdc%3af7645509%3a88144a7a" type="text/javascript"></script>
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+        
+        <div id="ctl00_RadAjaxManager1SU">
+	<span id="ctl00_RadAjaxManager1" style="display:none;"></span>
+</div>
+        
+        <div id="navbar" class="navbar navbar-default">
+            <script type="text/javascript">
+                try { ace.settings.check('navbar', 'fixed') } catch (e) { }
+            </script>
+
+            <div class="navbar-container" id="navbar-container">
+                <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+                    <span class="sr-only">切换侧边栏</span>
+
+                    <span class="icon-bar"></span>
+
+                    <span class="icon-bar"></span>
+
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="c-top">
+                    <div class="c-logo">
+                        
+
+<img src="/images/top-logo.jpg" width="428" height="79">
+
+
+                    </div>
+
+                    <div class="c-right" role="navigation">
+                        
+<div class="j-y0"></div>
+<ul class="c-hy">
+    <li class="j-y1">
+        梁山县卫计局&nbsp;&nbsp;
+            健康档案-梁山县卫生局(32000083)
+    </li>
+    <li class="j-y2"><a href="/Pages/xgmm.aspx">修改密码</a></li>
+    <li class="j-y3"><a href="/Login.aspx?action=loginout">退出登录</a></li>
+</ul>
+<div class="j-y4">
+</div>
+<div class="currName">
+    个人健康档案
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container" id="main-container">
+            <script type="text/javascript">
+                try { ace.settings.check('main-container', 'fixed') } catch (e) { }
+            </script>
+
+            <div id="sidebar" class="sidebar responsive">
+                <script type="text/javascript">
+                    try { ace.settings.check('sidebar', 'fixed') } catch (e) { }
+                </script>
+                
+<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+    <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+        <a class="btn btn-success" href="/" title="我的主页">
+            <i class="ace-icon fa fa-home"></i>
+        </a>
+
+        <a class="btn btn-info" href="/Pages/xgmm.aspx" title="个人信息">
+            <i class="ace-icon fa fa-users"></i>
+        </a>
+
+        <a class="btn btn-warning" href="/Pages/zhyw/gztx.aspx" title="工作提醒">
+            <i class="ace-icon fa fa-bell-o"></i>
+        </a>
+
+        <a class="btn btn-danger" href="/Pages/zhyw/tzgg/tzgg.aspx" title="通知公告">
+            <i class="ace-icon fa fa-bullhorn"></i>
+        </a>
+
+    </div>
+
+    <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+        <span class="btn btn-success"></span>
+
+        <span class="btn btn-info"></span>
+
+        <span class="btn btn-warning"></span>
+
+        <span class="btn btn-danger"></span>
+    </div>
+</div>
+
+                
+
+                <ul class="nav nav-list" id="nav_List"><li class="active open"><a href="javascript:void(0)" class="dropdown-toggle"><i class="menu-icon fa fa-tag"></i><span class="menu-text">健康档案管理</span><b class="arrow fa fa-angle-down"></b></a><b class="arrow"></b><ul class="submenu"><li class="active"><a href="/Pages/jbwsda/jkdagl/grjkdaxx.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>个人健康档案</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/jktj/jktjxx.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>健康体检</span></a><b class="arrow"></b></li></ul></li><li><a href="javascript:void(0)" class="dropdown-toggle"><i class="menu-icon fa fa-list-alt"></i><span class="menu-text">基本医疗</span><b class="arrow fa fa-angle-down"></b></a><b class="arrow"></b><ul class="submenu"><li><a href="/Pages/jbwsda/jbyl/jzjlxx.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>接诊记录</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/jbyl/hzjlxx.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>会诊记录</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/jbyl/sxzzxx2.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>双向转诊转出单</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/jbyl/sxzzxx1.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>双向转诊转入单</span></a><b class="arrow"></b></li></ul></li><li><a href="javascript:void(0)" class="dropdown-toggle"><i class="menu-icon fa fa-list"></i><span class="menu-text">重点人群健康管理</span><b class="arrow fa fa-angle-down"></b></a><b class="arrow"></b><ul class="submenu"><li><a href="javascript:void(0)" class="dropdown-toggle"><i class="menu-icon fa fa-caret-right"></i><b class="arrow fa fa-angle-down"></b><span>老年人健康管理</span></a><ul class="submenu"><li><a href="/Pages/jbwsda/zdrqjkgl/lnrjkgl/sfshzlnl.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>老年人生活自理能力</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/lnrjkgl/sfzygl.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>老年人中医药健康管理</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/jktj/jktjxx1.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>老年人健康体检</span></a><b class="arrow"></b></li></ul><b class="arrow"></b></li><li><a href="javascript:void(0)" class="dropdown-toggle"><i class="menu-icon fa fa-caret-right"></i><b class="arrow fa fa-angle-down"></b><span>孕产妇健康管理</span></a><ul class="submenu"><li><a href="/Pages/jbwsda/zdrqjkgl/fnjkgl/sfcq1.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>第一次产前随访表</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/fnjkgl/sfcq2.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>第二次产前随访表</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/fnjkgl/sfcq3.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>第三次产前随访表</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/fnjkgl/sfcq4.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>第四次产前随访表</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/fnjkgl/sfcq5.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>第五次产前随访表</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/fnjkgl/sfch0.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>产后访视表</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/fnjkgl/sfch1.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>产后42天健康检查记录表</span></a><b class="arrow"></b></li></ul><b class="arrow"></b></li><li><a href="javascript:void(0)" class="dropdown-toggle"><i class="menu-icon fa fa-caret-right"></i><b class="arrow fa fa-angle-down"></b><span>儿童健康管理</span></a><ul class="submenu"><li><a href="/Pages/jbwsda/zdrqjkgl/etjkgl/sfxse.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>新生儿家庭访视</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etjkgl/sf3sq0.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童健康体检(1个月)</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etjkgl/sf3sq1.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童健康体检(3个月)</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etjkgl/sf3sq2.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童健康体检(6个月)</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etjkgl/sf3sq3.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童健康体检(8个月)</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etjkgl/sf3sq4.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童健康体检(12个月)</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etjkgl/sf3sq5.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童健康体检(18个月)</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etjkgl/sf3sq6.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童健康体检(24个月)</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etjkgl/sf3sq7.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童健康体检(30个月)</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etjkgl/sf3sh3.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童健康体检(3岁)</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etjkgl/sf3sh4.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童健康体检(4岁)</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etjkgl/sf3sh5.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童健康体检(5岁)</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etjkgl/sf3sh6.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童健康体检(6岁)</span></a><b class="arrow"></b></li></ul><b class="arrow"></b></li><li><a href="javascript:void(0)" class="dropdown-toggle"><i class="menu-icon fa fa-caret-right"></i><b class="arrow fa fa-angle-down"></b><span>儿童中医药健康管理</span></a><ul class="submenu"><li><a href="/Pages/jbwsda/zdrqjkgl/etzyygl/sfetzyygl6.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童中医药健康管理(6个月)</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etzyygl/sfetzyygl12.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童中医药健康管理(12个月)</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etzyygl/sfetzyygl18.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童中医药健康管理(18个月)</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etzyygl/sfetzyygl24.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童中医药健康管理(24个月)</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etzyygl/sfetzyygl30.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童中医药健康管理(30个月)</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/etzyygl/sfetzyygl36.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>儿童中医药健康管理(36个月)</span></a><b class="arrow"></b></li></ul><b class="arrow"></b></li><li><a href="javascript:void(0)" class="dropdown-toggle"><i class="menu-icon fa fa-caret-right"></i><b class="arrow fa fa-angle-down"></b><span>高血压健康管理</span></a><ul class="submenu"><li><a href="/Pages/jbwsda/zdrqjkgl/gxyjkgl/gxyglkxx.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>高血压管理卡</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/gxyjkgl/sfgxy.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>高血压随访记录</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/jktj/jktjxx2.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>高血压健康体检</span></a><b class="arrow"></b></li></ul><b class="arrow"></b></li><li><a href="javascript:void(0)" class="dropdown-toggle"><i class="menu-icon fa fa-caret-right"></i><b class="arrow fa fa-angle-down"></b><span>糖尿病健康管理</span></a><ul class="submenu"><li><a href="/Pages/jbwsda/zdrqjkgl/tnbjkgl/tnbglkxx.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>糖尿病管理卡</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/tnbjkgl/sftnb.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>糖尿病随访记录</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/jktj/jktjxx3.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>糖尿病健康体检</span></a><b class="arrow"></b></li></ul><b class="arrow"></b></li><li><a href="javascript:void(0)" class="dropdown-toggle"><i class="menu-icon fa fa-caret-right"></i><b class="arrow fa fa-angle-down"></b><span>重性精神疾病管理</span></a><ul class="submenu"><li><a href="/Pages/jbwsda/zdrqjkgl/zzjsjbjkgl/zzjsjbglkxx.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>重性精神疾病管理卡</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/zzjsjbjkgl/sfzzjsjb.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>重性精神疾病随访记录</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/zzjsjbjkgl/zzjsjbgrxxbcbxx.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>重性精神疾病个人信息补充表</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/jktj/jktjxx4.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>重性精神疾病健康体检</span></a><b class="arrow"></b></li></ul><b class="arrow"></b></li><li><a href="javascript:void(0)" class="dropdown-toggle"><i class="menu-icon fa fa-caret-right"></i><b class="arrow fa fa-angle-down"></b><span>脑卒中健康管理</span></a><ul class="submenu"><li><a href="/Pages/jbwsda/zdrqjkgl/nczjkgl/nczglkxx.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>脑卒中管理卡</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/nczjkgl/sfncz.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>脑卒中随访记录</span></a><b class="arrow"></b></li></ul><b class="arrow"></b></li><li><a href="javascript:void(0)" class="dropdown-toggle"><i class="menu-icon fa fa-caret-right"></i><b class="arrow fa fa-angle-down"></b><span>冠心病健康管理</span></a><ul class="submenu"><li><a href="/Pages/jbwsda/zdrqjkgl/gxbjkgl/gxbglkxx.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>冠心病管理卡</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/gxbjkgl/sfgxb.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>冠心病随访记录</span></a><b class="arrow"></b></li></ul><b class="arrow"></b></li><li><a href="javascript:void(0)" class="dropdown-toggle"><i class="menu-icon fa fa-caret-right"></i><b class="arrow fa fa-angle-down"></b><span>残疾人健康管理</span></a><ul class="submenu"><li><a href="/Pages/jbwsda/zdrqjkgl/cjrjkgl/cjrglkxx1.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>肢体残疾人管理卡</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/cjrjkgl/sfcjr1.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>肢体残疾人随访记录</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/cjrjkgl/cjrglkxx2.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>听力言语残疾人管理卡</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/cjrjkgl/sfcjr2.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>听力言语残疾人随访记录</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/cjrjkgl/cjrglkxx4.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>视力残疾人管理卡</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/cjrjkgl/sfcjr4.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>视力残疾人随访记录</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/cjrjkgl/cjrglkxx3.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>智力言语残疾人管理卡</span></a><b class="arrow"></b></li><li><a href="/Pages/jbwsda/zdrqjkgl/cjrjkgl/sfcjr3.aspx?DAH=3708321124000444"><i class="menu-icon fa fa-caret-right"></i><span>智力言语残疾人随访记录</span></a><b class="arrow"></b></li></ul><b class="arrow"></b></li></ul></li></ul>
+
+                <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+                    <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+                </div>
+
+                <script type="text/javascript">
+                    try { ace.settings.check('sidebar', 'collapsed') } catch (e) { }
+                </script>
+            </div>
+
+            <div class="main-content">
+                <div class="main-content-inner">
+                    <div class="breadcrumbs" id="breadcrumbs">
+                        <script type="text/javascript">
+                            try { ace.settings.check('breadcrumbs', 'fixed') } catch (e) { }
+                        </script>
+                        <ul class="breadcrumb" >
+<li><i class="ace-icon fa fa-home home-icon"></i></li>
+<li><a>健康档案管理</a></li>
+<li class="active">个人健康档案</li>
+</ul>
+
+
+                        
+<!--
+<div class="nav-search" id="nav-search">
+    <form class="form-search">
+        <span class="input-icon">
+            <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+            <i class="ace-icon fa fa-search nav-search-icon"></i>
+        </span>
+    </form>
+</div>
+-->
+                    </div>
+
+                    <div class="page-content">
+                        
+
+                        <div id="ctl00_FirefoxMsg" class="alert alert-danger">
+                            <button class="close" type="button" data-dismiss="alert">
+                                <i class="ace-icon fa fa-times"></i>
+                            </button>
+                            <strong>为避免保存失败等异常情况，达到最佳操作体验，建议您安装使用火狐浏览器！<a href="/Soft/Firefox-full-latest.exe" target="_blank" style="color: red;">点击下载火狐浏览器</a></strong>
+                        </div>
+
+                        <div id="ctl00_RadAjaxLoadingPanel1" class="RadAjax RadAjax_Windows7" style="display:none;">
+	<div class="raDiv">
+		
+                        
+	</div><div class="raColor raTransp">
+
+	</div>
+</div>
+                        <div class="RadAjaxPanel" id="ctl00_ctl00_RadAjaxPanel1Panel">
+	<div id="ctl00_RadAjaxPanel1">
+		
+
+                            <div style="display: none;">
+                                
+    <input name="ctl00$page_ContentHidden$DABH" type="text" value="3708321124000444" id="ctl00_page_ContentHidden_DABH" />
+    <input name="ctl00$page_ContentHidden$_ID" type="text" value="E38A99B4CBC5405A8D57CFF828D59D58" id="ctl00_page_ContentHidden__ID" />
+    <input name="ctl00$page_ContentHidden$WZD" type="text" value="100" id="ctl00_page_ContentHidden_WZD" />
+    
+        <script>
+            var wzdClientID = "ctl00_page_ContentHidden_WZD";
+        </script>
+    
+
+
+                                
+                                    <script>
+                                        try {
+                                            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(regJqueryReady);
+                                        }
+                                        catch (err) {
+
+                                        }
+
+                                        $().ready(function () {
+                                            var pointSum = 0;
+                                            var pointFinished = 0;
+                                            var pointLack = 0;
+                                            var pointWZD = 100;
+                                            try {
+                                                //$("[data-points]").attr("");
+                                                $("[data-points]").each(function (i) {
+                                                    var point = parseInt($(this).attr("data-points"));
+                                                    pointSum += point;
+                                                });
+                                                $("[data-finishedpoint]").each(function (i) {
+                                                    pointFinished += parseInt($(this).attr("data-finishedpoint"));
+                                                });
+                                                pointLack = pointSum - pointFinished;
+                                                pointWZD = pointFinished / pointSum * 100;
+                                                $("#khxSum").text(pointSum);
+                                                $("#khxLack").text(pointLack);
+                                                $("#khxCompletion").text(toDecimal2(pointWZD) + "%");
+                                                $("#" + wzdClientID).val(parseInt(pointWZD));
+                                            }
+                                            catch (ex) { }
+                                        });
+                                    </script>
+                                
+                            </div>
+
+                            
+    <div class="dd-item dd2-item" data-id="18">
+        <div class="dd-handle dd2-handle">
+            <i class="normal-icon ace-icon fa fa-clock-o pink bigger-130"></i>
+
+            <i class="drag-icon ace-icon fa fa-arrows bigger-125"></i>
+        </div>
+        <div class="dd2-content">
+            <div class="floatLeft">
+                必填项：<span id="khxSum">0</span>　　缺项：<span id="khxLack">0</span>　　完成度：<span id="khxCompletion">100%</span>
+            </div>
+            <div class="floatRight">
+                加载耗时：0.09秒
+            </div>
+        </div>
+    </div>
+
+
+                            
+    <div class="row">
+        <div class="col-xs-12 widget-container-col">
+            <div class="widget-box well well-sm">
+                <div class="widget-header">
+                    <h5 class="widget-title"><i class="ace-icon fa fa-user"></i>个人基本信息</h5>
+                </div>
+                <div class="widget-body">
+                    <div class="widget-main">
+                        <table class="table tableForm table-bordered minWidthTh tableMarginBottom0">
+                            <tbody>
+                                <tr>
+                                    <th>档案编号</th>
+                                    <td>
+                                        
+<div class="">
+    <label class=""></label>
+    <input name="ctl00$page_Content$grdabh$tb" type="text" value="3708321124000444" maxlength="18" readonly="readonly" id="ctl00_page_Content_grdabh_tb" disabled="disabled" class=" required" />&nbsp;<div id="ctl00_page_Content_grdabh_pointMark"></div>
+</div>
+
+                                    </td>
+                                    <th>姓名</th>
+                                    <td>
+                                        
+<div class="">
+    <label class=""></label>
+    <input name="ctl00$page_Content$ryxm$tb" type="text" value="马红梅" maxlength="50" id="ctl00_page_Content_ryxm_tb" disabled="disabled" class=" required" data-points="1" data-finishedpoint="1" />&nbsp;<div id="ctl00_page_Content_ryxm_pointMark" class="hasPoints" title="考核值：1"></div>
+</div>
+
+                                    </td>
+                                    <th>身份证号</th>
+                                    <td>
+                                        
+<div class="">
+    <label class=""></label>
+    <input name="ctl00$page_Content$sfzh$tb" type="text" value="370832198704205229" maxlength="18" id="ctl00_page_Content_sfzh_tb" disabled="disabled" class=" required" data-points="1" data-finishedpoint="1" />&nbsp;<div id="ctl00_page_Content_sfzh_pointMark" class="hasPoints" title="考核值：1"></div>
+</div>
+
+                                    </td>
+                                    <th>性别</th>
+                                    <td>
+                                        
+<div class="">
+    <label class=""></label>
+    <select name="ctl00$page_Content$xingbie$ddl" id="ctl00_page_Content_xingbie_ddl" disabled="disabled" data-points="1" data-finishedpoint="1">
+			<option value="1">男</option>
+			<option selected="selected" value="2">女</option>
+			<option value="9">其他</option>
+			<option value="0">不详</option>
+
+		</select>
+    <div id="ctl00_page_Content_xingbie_pointMark" class="hasPoints" title="考核值：1"></div>
+</div>
+
+                                    </td>
+                                    <th>出生日期</th>
+                                    <td>
+                                        
+<div class="">
+    <label class=""></label>
+    <input name="ctl00$page_Content$csrq$tb" type="text" value="1987-04-20" id="ctl00_page_Content_csrq_tb" disabled="disabled" class=" date-picker required" data-points="1" data-finishedpoint="1" />&nbsp;<div id="ctl00_page_Content_csrq_pointMark" class="hasPoints" title="考核值：1"></div>
+</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>本人电话</th>
+                                    <td>
+                                        
+<div class="">
+    <label class=""></label>
+    <input name="ctl00$page_Content$jtdh$tb" type="text" value="15154791869" maxlength="11" id="ctl00_page_Content_jtdh_tb" disabled="disabled" class=" number required" data-points="1" data-finishedpoint="1" />&nbsp;<div id="ctl00_page_Content_jtdh_pointMark" class="hasPoints" title="考核值：1"></div>
+</div>
+
+                                    </td>
+                                    <th>联系人</th>
+                                    <td>
+                                        
+<div class="">
+    <label class=""></label>
+    <input name="ctl00$page_Content$lxr$tb" type="text" value="马红梅" maxlength="10" id="ctl00_page_Content_lxr_tb" disabled="disabled" class=" required" data-points="1" data-finishedpoint="1" />&nbsp;<div id="ctl00_page_Content_lxr_pointMark" class="hasPoints" title="考核值：1"></div>
+</div>
+
+                                    </td>
+                                    <th>联系电话</th>
+                                    <td>
+                                        
+<div class="">
+    <label class=""></label>
+    <input name="ctl00$page_Content$lxrdh$tb" type="text" value="15265783039" maxlength="11" id="ctl00_page_Content_lxrdh_tb" disabled="disabled" class=" number required" data-points="1" data-finishedpoint="1" />&nbsp;<div id="ctl00_page_Content_lxrdh_pointMark" class="hasPoints" title="考核值：1"></div>
+</div>
+
+                                    </td>
+                                    <th>婚姻状况</th>
+                                    <td>
+                                        
+<div class="">
+    <label class=""></label>
+    <select name="ctl00$page_Content$hyzk$ddl" id="ctl00_page_Content_hyzk_ddl" disabled="disabled" data-points="1" data-finishedpoint="1">
+			<option value=""></option>
+			<option selected="selected" value="1">已婚</option>
+			<option value="2">未婚</option>
+			<option value="3">丧偶</option>
+			<option value="4">离异</option>
+			<option value="9">其他</option>
+
+		</select>
+    <div id="ctl00_page_Content_hyzk_pointMark" class="hasPoints" title="考核值：1"></div>
+</div>
+
+                                    </td>
+                                    <th>档案状态</th>
+                                    <td>
+                                        
+<div class="">
+    <label class=""></label>
+    <select name="ctl00$page_Content$dazt$ddl" id="ctl00_page_Content_dazt_ddl" disabled="disabled">
+			<option selected="selected" value="0">活动</option>
+			<option value="1">非活动</option>
+			<option value="2">注销</option>
+			<option value="3">迁出</option>
+			<option value="4">其他</option>
+
+		</select>
+    <div id="ctl00_page_Content_dazt_pointMark"></div>
+</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>所属机构</th>
+                                    <td colspan="3">
+                                        
+<div class="">
+    <label class=""></label>
+    <input name="ctl00$page_Content$ssdwName$tb" type="text" value="马营乡杨屯村卫生室" readonly="readonly" id="ctl00_page_Content_ssdwName_tb" disabled="disabled" />&nbsp;<div id="ctl00_page_Content_ssdwName_pointMark"></div>
+</div>
+
+                                    </td>
+                                    <th>建档机构</th>
+                                    <td colspan="5">
+                                        
+<div class="">
+    <label class=""></label>
+    <input name="ctl00$page_Content$jddwName$tb" type="text" value="马营卫生院" readonly="readonly" id="ctl00_page_Content_jddwName_tb" disabled="disabled" />&nbsp;<div id="ctl00_page_Content_jddwName_pointMark"></div>
+</div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 widget-container-col">
+            <div class="widget-box well well-sm">
+                <div class="widget-header">
+                    <h5 class="widget-title"><i class="ace-icon fa fa-info-circle"></i>详细信息</h5>
+                </div>
+                <div class="widget-body">
+                    <div class="widget-main">
+                        <table class="table tableForm table-bordered table-hover">
+                            <tbody>
+                                <tr>
+                                    <th>家庭档案</th>
+                                    <td colspan="2">
+                                        
+<div class="">
+    <label class=""></label>
+    <input name="ctl00$page_Content$jtbm$tb" type="text" maxlength="18" id="ctl00_page_Content_jtbm_tb" disabled="disabled" />&nbsp;<div id="ctl00_page_Content_jtbm_pointMark"></div>
+</div>
+
+                                    </td>
+                                    <th>工作单位</th>
+                                    <td>
+                                        
+<div class="">
+    <label class=""></label>
+    <input name="ctl00$page_Content$gzdw$tb" type="text" value="无" maxlength="50" id="ctl00_page_Content_gzdw_tb" disabled="disabled" data-points="1" data-finishedpoint="1" />&nbsp;<div id="ctl00_page_Content_gzdw_pointMark" class="hasPoints" title="考核值：1"></div>
+</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>常住类型</th>
+                                    <td colspan="2">
+                                        
+<div class="">
+    <label class=""></label>
+    <select name="ctl00$page_Content$czlx$ddl" id="ctl00_page_Content_czlx_ddl" disabled="disabled" data-points="1" data-finishedpoint="1">
+			<option value="0"></option>
+			<option selected="selected" value="1">户籍</option>
+			<option value="2">非户籍</option>
+
+		</select>
+    <div id="ctl00_page_Content_czlx_pointMark" class="hasPoints" title="考核值：1"></div>
+</div>
+
+                                    </td>
+                                    <th>职业</th>
+                                    <td>
+                                        
+<div class="">
+    <label class=""></label>
+    <select name="ctl00$page_Content$zhiye$ddl" id="ctl00_page_Content_zhiye_ddl" disabled="disabled" data-points="1" data-finishedpoint="1">
+			<option value=""></option>
+			<option selected="selected" value="5-1">种植业生产人员</option>
+			<option value="5-2">林业生产及野生动植物保护人员</option>
+			<option value="5-3">畜牧业生产人员</option>
+			<option value="5-4">渔业生产人员</option>
+			<option value="5-5">水利设施管理养护人员</option>
+			<option value="5-9">其他</option>
+			<option value="5-10">国家机关、党群组织、企业、事业单位负责人</option>
+			<option value="5-11">专业技术人员</option>
+			<option value="5-12">办事人员和有关人员</option>
+			<option value="5-13">商业、服务业人员</option>
+			<option value="5-14">农、林、牧、渔、水利业生产人员</option>
+			<option value="5-15">生产、运输设备操作人员及有关人员</option>
+			<option value="5-16">军人</option>
+			<option value="5-17">不便分类的其他从业人员</option>
+
+		</select>
+    <div id="ctl00_page_Content_zhiye_pointMark" class="hasPoints" title="考核值：1"></div>
+</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>民族</th>
+                                    <td colspan="2">
+                                        
+<div class="">
+    <label class=""></label>
+    <select name="ctl00$page_Content$minzu$ddl" id="ctl00_page_Content_minzu_ddl" disabled="disabled" data-points="1" data-finishedpoint="1">
+			<option value=""></option>
+			<option selected="selected" value="01">汉族</option>
+			<option value="02">蒙古族</option>
+			<option value="03">回族</option>
+			<option value="04">藏族</option>
+			<option value="05">维吾尔族</option>
+			<option value="06">苗族</option>
+			<option value="07">彝族</option>
+			<option value="08">壮族</option>
+			<option value="09">布依族</option>
+			<option value="10">朝鲜族</option>
+			<option value="11">满族</option>
+			<option value="12">侗族</option>
+			<option value="13">瑶族</option>
+			<option value="14">白族</option>
+			<option value="15">土家族</option>
+			<option value="16">哈尼族</option>
+			<option value="17">哈萨克族</option>
+			<option value="18">傣族</option>
+			<option value="19">黎族</option>
+			<option value="20">傈僳族</option>
+			<option value="21">佤族</option>
+			<option value="22">畲族</option>
+			<option value="23">高山族</option>
+			<option value="24">拉祜族</option>
+			<option value="25">水族</option>
+			<option value="26">东乡族</option>
+			<option value="27">纳西族</option>
+			<option value="28">景颇族</option>
+			<option value="29">柯尔克孜族</option>
+			<option value="30">土族</option>
+			<option value="31">达斡尔族</option>
+			<option value="32">仫佬族</option>
+			<option value="33">羌族</option>
+			<option value="34">布朗族</option>
+			<option value="35">撒拉族</option>
+			<option value="36">毛南族</option>
+			<option value="37">仡佬族</option>
+			<option value="38">锡伯族</option>
+			<option value="39">阿昌族</option>
+			<option value="40">普米族</option>
+			<option value="41">塔吉克族</option>
+			<option value="42">怒族</option>
+			<option value="43">乌孜别克族</option>
+			<option value="44">俄罗斯族</option>
+			<option value="45">鄂温克族</option>
+			<option value="46">崩龙族</option>
+			<option value="47">保安族</option>
+			<option value="48">裕固族</option>
+			<option value="49">京族</option>
+			<option value="50">塔塔尔族</option>
+			<option value="51">独龙族</option>
+			<option value="52">鄂伦春族</option>
+			<option value="53">赫哲族</option>
+			<option value="54">门巴族</option>
+			<option value="55">珞巴族</option>
+			<option value="56">基诺族</option>
+			<option value="99">其他</option>
+			<option value="98">外国血统中国籍人士</option>
+
+		</select>
+    <div id="ctl00_page_Content_minzu_pointMark" class="hasPoints" title="考核值：1"></div>
+</div>
+
+                                    </td>
+                                    <th>血型</th>
+                                    <td>
+                                        
+<div class="">
+    <label class=""></label>
+    <select name="ctl00$page_Content$xuexing$ddl" id="ctl00_page_Content_xuexing_ddl" disabled="disabled" data-points="1" data-finishedpoint="1">
+			<option value="0"></option>
+			<option value="1">A型</option>
+			<option value="2">B型</option>
+			<option value="3">O型</option>
+			<option value="4">AB型</option>
+			<option selected="selected" value="5">不详</option>
+
+		</select>
+    <div id="ctl00_page_Content_xuexing_pointMark" class="hasPoints" title="考核值：1"></div>
+</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>RH阴性</th>
+                                    <td colspan="2">
+                                        
+<div class="">
+    <label class=""></label>
+    <select name="ctl00$page_Content$sfRH$ddl" id="ctl00_page_Content_sfRH_ddl" disabled="disabled" data-points="1" data-finishedpoint="1">
+			<option value="0"></option>
+			<option value="1">否</option>
+			<option value="2">是</option>
+			<option selected="selected" value="3">不详</option>
+
+		</select>
+    <div id="ctl00_page_Content_sfRH_pointMark" class="hasPoints" title="考核值：1"></div>
+</div>
+
+                                    </td>
+                                    <th>文化程度</th>
+                                    <td>
+                                        
+<div class="">
+    <label class=""></label>
+    <select name="ctl00$page_Content$whcd$ddl" id="ctl00_page_Content_whcd_ddl" disabled="disabled" data-points="1" data-finishedpoint="1">
+			<option value="0"></option>
+			<option value="1">文盲及半文盲</option>
+			<option value="2">小学</option>
+			<option value="3">初中</option>
+			<option selected="selected" value="4">高中/技校/中专</option>
+			<option value="5">大学专科及以上</option>
+			<option value="6">不详</option>
+
+		</select>
+    <div id="ctl00_page_Content_whcd_pointMark" class="hasPoints" title="考核值：1"></div>
+</div>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th rowspan="2">现居住</th>
+                                    <td colspan="4">
+                                        
+<div class="">
+    <label class=""></label>
+    <select name="ctl00$page_Content$XZQH$sheng" id="ctl00_page_Content_XZQH_sheng" disabled="disabled" class="required">
+			<option value="21">辽宁省</option>
+			<option value="31">上海市</option>
+			<option value="22">吉林省</option>
+			<option value="23">黑龙江省</option>
+			<option value="11">北京市</option>
+			<option value="12">天津市</option>
+			<option value="13">河北省</option>
+			<option value="14">山西省</option>
+			<option value="15">内蒙古自治区</option>
+			<option value="36">江西省</option>
+			<option value="41">河南省</option>
+			<option selected="selected" value="37">山东省</option>
+			<option value="32">江苏省</option>
+			<option value="33">浙江省</option>
+			<option value="34">安徽省</option>
+			<option value="35">福建省</option>
+			<option value="45">广西壮族自治区</option>
+			<option value="46">海南省</option>
+			<option value="52">贵州省</option>
+			<option value="51">四川省</option>
+			<option value="42">湖北省</option>
+			<option value="43">湖南省</option>
+			<option value="44">广东省</option>
+			<option value="63">青海省</option>
+			<option value="64">宁夏回族自治区</option>
+			<option value="65">新疆维吾尔自治区</option>
+			<option value="71">台湾省</option>
+			<option value="72">香港特别行政区</option>
+			<option value="73">澳门特别行政区</option>
+			<option value="53">云南省</option>
+			<option value="54">西藏自治区</option>
+			<option value="61">陕西省</option>
+			<option value="62">甘肃省</option>
+			<option value="110112">aa</option>
+			<option value="3">222</option>
+			<option value="3333333">222222222222222222222</option>
+
+		</select>
+    <select name="ctl00$page_Content$XZQH$shi" id="ctl00_page_Content_XZQH_shi" disabled="disabled" class="required">
+			<option value="3701">山东济南市</option>
+			<option value="3702">山东青岛市</option>
+			<option value="3703">山东淄博市</option>
+			<option value="3704">山东枣庄市</option>
+			<option value="3705">山东东营市</option>
+			<option value="3706">山东烟台市</option>
+			<option value="3707">山东潍坊市</option>
+			<option selected="selected" value="3708">山东济宁市</option>
+			<option value="3709">山东泰安市</option>
+			<option value="3710">山东威海市</option>
+			<option value="3711">山东日照市</option>
+			<option value="3712">山东莱芜市</option>
+			<option value="3723">山东滨州地区</option>
+			<option value="3724">山东德州地区</option>
+			<option value="3725">山东聊城地区</option>
+			<option value="3728">山东临沂地区</option>
+			<option value="3729">山东菏泽地区</option>
+
+		</select>
+    <select name="ctl00$page_Content$XZQH$qu" id="ctl00_page_Content_XZQH_qu" disabled="disabled" class="required">
+			<option value="370801">山东济宁市辖区</option>
+			<option value="370811">山东济宁任城区</option>
+			<option value="370812">山东济宁太白湖区</option>
+			<option value="370822">山东济宁高新区</option>
+			<option value="370826">山东济宁微山县</option>
+			<option value="370827">山东济宁鱼台县</option>
+			<option value="370828">山东济宁金乡县</option>
+			<option value="370829">山东济宁嘉祥县</option>
+			<option value="370830">山东济宁汶上县</option>
+			<option value="370831">山东济宁泗水县</option>
+			<option selected="selected" value="370832">山东济宁梁山县</option>
+			<option value="370881">山东济宁曲阜市</option>
+			<option value="370882">山东济宁兖州市</option>
+			<option value="370883">山东济宁邹城市</option>
+
+		</select>
+    <select name="ctl00$page_Content$XZQH$jie" id="ctl00_page_Content_XZQH_jie" disabled="disabled" class="required">
+			<option value="37083201">梁山镇</option>
+			<option value="37083202">杨营镇</option>
+			<option value="37083203">赵固堆乡</option>
+			<option value="37083204">韩垓镇</option>
+			<option value="37083205">小安山镇</option>
+			<option value="37083206">寿张集乡</option>
+			<option value="37083207">大路口乡</option>
+			<option value="37083208">小路口镇</option>
+			<option value="37083209">黑虎庙镇</option>
+			<option value="37083210">韩岗镇</option>
+			<option selected="selected" value="37083211">马营乡</option>
+			<option value="37083212">馆驿镇</option>
+			<option value="37083213">拳铺镇</option>
+			<option value="37083214">徐集镇</option>
+			<option value="37083215">开发区</option>
+			<option value="37083217">风景委</option>
+			<option value="37083218">水泊街道社区卫生服务中心</option>
+			<option value="37083219">梁山街道社区卫生服务中心北站</option>
+			<option value="37083220">水泊街道社区卫生服务中心南站</option>
+			<option value="37083221">梁山街道社区卫生服务中心</option>
+			<option value="37083222">疾控中心社区卫生服务站</option>
+
+		</select>
+    <select name="ctl00$page_Content$XZQH$cun" id="ctl00_page_Content_XZQH_cun" disabled="disabled" class="required" data-points="10" data-finishedpoint="10">
+			<option value="3708321101">马营</option>
+			<option value="3708321102">赵坝</option>
+			<option value="3708321103">杨营</option>
+			<option value="3708321104">芦里</option>
+			<option value="3708321105">曹庙</option>
+			<option value="3708321106">郝庄</option>
+			<option value="3708321107">辛兴屯</option>
+			<option selected="selected" value="3708321108">杨屯</option>
+			<option value="3708321109">江屯</option>
+			<option value="3708321110">杜庄</option>
+			<option value="3708321111">倪楼</option>
+			<option value="3708321112">北木屯</option>
+			<option value="3708321113">薛屯</option>
+			<option value="3708321114">胡坑</option>
+			<option value="3708321115">柯庄</option>
+			<option value="3708321116">张飞垓</option>
+			<option value="3708321117">东李庄</option>
+			<option value="3708321118">王楼</option>
+			<option value="3708321119">宋庄</option>
+			<option value="3708321120">许庄</option>
+			<option value="3708321121">南木屯</option>
+			<option value="3708321122">胡屯</option>
+			<option value="3708321123">吴垓</option>
+			<option value="3708321124">鲍垓</option>
+
+		</select>
+    <div id="ctl00_page_Content_XZQH_pointMark" class="hasPoints" title="考核值：10"></div>
+</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">
+                                        
+<div class="formBox">
+    <label class="">详细地址</label>
+    <input name="ctl00$page_Content$xxdz$tb" type="text" value="马营乡杨屯村" maxlength="50" id="ctl00_page_Content_xxdz_tb" disabled="disabled" />&nbsp;<div id="ctl00_page_Content_xxdz_pointMark"></div>
+</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>医疗费用支付方式</th>
+                                    <td colspan="4">
+                                        
+<div>
+    <div class="floatLeft ">
+        <label class=""></label>
+    </div>
+    <div class="floatLeft marginLeft5px">
+        <div class="floatLeft">
+            <span id="ctl00_page_Content_ylzfxs_chkList1" disabled="disabled" class="complexTextBox" data-points="1" data-finishedpoint="1"><span disabled="disabled"><input id="ctl00_page_Content_ylzfxs_chkList1_0" type="checkbox" name="ctl00$page_Content$ylzfxs$chkList1$0" disabled="disabled" /><label for="ctl00_page_Content_ylzfxs_chkList1_0">城镇职工基本医疗保险</label></span><span disabled="disabled"><input id="ctl00_page_Content_ylzfxs_chkList1_1" type="checkbox" name="ctl00$page_Content$ylzfxs$chkList1$1" disabled="disabled" /><label for="ctl00_page_Content_ylzfxs_chkList1_1">城镇居民基本医疗保险</label></span><span disabled="disabled"><input id="ctl00_page_Content_ylzfxs_chkList1_2" type="checkbox" name="ctl00$page_Content$ylzfxs$chkList1$2" checked="checked" disabled="disabled" /><label for="ctl00_page_Content_ylzfxs_chkList1_2">新型农村合作医疗</label></span><span disabled="disabled"><input id="ctl00_page_Content_ylzfxs_chkList1_3" type="checkbox" name="ctl00$page_Content$ylzfxs$chkList1$3" disabled="disabled" /><label for="ctl00_page_Content_ylzfxs_chkList1_3">贫困救助</label></span><span disabled="disabled"><input id="ctl00_page_Content_ylzfxs_chkList1_4" type="checkbox" name="ctl00$page_Content$ylzfxs$chkList1$4" disabled="disabled" /><label for="ctl00_page_Content_ylzfxs_chkList1_4">商业医疗保险</label></span><span disabled="disabled"><input id="ctl00_page_Content_ylzfxs_chkList1_5" type="checkbox" name="ctl00$page_Content$ylzfxs$chkList1$5" disabled="disabled" /><label for="ctl00_page_Content_ylzfxs_chkList1_5">全公费</label></span><span disabled="disabled"><input id="ctl00_page_Content_ylzfxs_chkList1_6" type="checkbox" name="ctl00$page_Content$ylzfxs$chkList1$6" disabled="disabled" /><label for="ctl00_page_Content_ylzfxs_chkList1_6">全自费</label></span><span disabled="disabled"><input id="ctl00_page_Content_ylzfxs_chkList1_7" type="checkbox" name="ctl00$page_Content$ylzfxs$chkList1$7" disabled="disabled" /><label for="ctl00_page_Content_ylzfxs_chkList1_7">其他</label></span></span>
+        </div>
+        <div class="floatLeft">
+            <input name="ctl00$page_Content$ylzfxs$tb" type="text" maxlength="50" id="ctl00_page_Content_ylzfxs_tb" disabled="disabled" />
+        </div>
+        <div id="ctl00_page_Content_ylzfxs_pointMark" class="hasPoints" title="考核值：1"></div>
+    </div>
+</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>医疗保险号</th>
+                                    <td colspan="4">
+                                        
+<div class="">
+    <label class=""></label>
+    <input name="ctl00$page_Content$ylzh$tb" type="text" value="11240111" maxlength="20" id="ctl00_page_Content_ylzh_tb" disabled="disabled" />&nbsp;<div id="ctl00_page_Content_ylzh_pointMark"></div>
+</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>药物过敏史</th>
+                                    <td colspan="4">
+                                        
+
+    <div class="floatLeft">
+        <div class="floatLeft marginLeft5px">
+            <span id="ctl00_page_Content_guomingshi_radioList1" disabled="disabled" class="complexTextBox" data-points="1" data-finishedpoint="1"><span disabled="disabled"><input id="ctl00_page_Content_guomingshi_radioList1_0" type="radio" name="ctl00$page_Content$guomingshi$radioList1" value="0" checked="checked" disabled="disabled" /><label for="ctl00_page_Content_guomingshi_radioList1_0">无</label></span><span disabled="disabled"><input id="ctl00_page_Content_guomingshi_radioList1_1" type="radio" name="ctl00$page_Content$guomingshi$radioList1" value="1" disabled="disabled" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$page_Content$guomingshi$radioList1$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ctl00_page_Content_guomingshi_radioList1_1">有</label></span></span>
+        </div>
+        <div class="floatLeft">
+            
+<div>
+    <div class="floatLeft ">
+        <label class=""></label>
+    </div>
+    <div class="floatLeft marginLeft5px">
+        <div class="floatLeft">
+            <span id="ctl00_page_Content_guomingshi_ctb1_chkList1" disabled="disabled" class="complexTextBox"><span disabled="disabled"><input id="ctl00_page_Content_guomingshi_ctb1_chkList1_0" type="checkbox" name="ctl00$page_Content$guomingshi$ctb1$chkList1$0" disabled="disabled" /><label for="ctl00_page_Content_guomingshi_ctb1_chkList1_0">青霉素</label></span><span disabled="disabled"><input id="ctl00_page_Content_guomingshi_ctb1_chkList1_1" type="checkbox" name="ctl00$page_Content$guomingshi$ctb1$chkList1$1" disabled="disabled" /><label for="ctl00_page_Content_guomingshi_ctb1_chkList1_1">磺胺</label></span><span disabled="disabled"><input id="ctl00_page_Content_guomingshi_ctb1_chkList1_2" type="checkbox" name="ctl00$page_Content$guomingshi$ctb1$chkList1$2" disabled="disabled" /><label for="ctl00_page_Content_guomingshi_ctb1_chkList1_2">不详</label></span><span disabled="disabled"><input id="ctl00_page_Content_guomingshi_ctb1_chkList1_3" type="checkbox" name="ctl00$page_Content$guomingshi$ctb1$chkList1$3" disabled="disabled" /><label for="ctl00_page_Content_guomingshi_ctb1_chkList1_3">链霉素</label></span><span disabled="disabled"><input id="ctl00_page_Content_guomingshi_ctb1_chkList1_4" type="checkbox" name="ctl00$page_Content$guomingshi$ctb1$chkList1$4" disabled="disabled" /><label for="ctl00_page_Content_guomingshi_ctb1_chkList1_4">其他</label></span></span>
+        </div>
+        <div class="floatLeft">
+            <input name="ctl00$page_Content$guomingshi$ctb1$tb" type="text" maxlength="50" id="ctl00_page_Content_guomingshi_ctb1_tb" disabled="disabled" />
+        </div>
+        <div id="ctl00_page_Content_guomingshi_ctb1_pointMark"></div>
+    </div>
+</div>
+        </div>
+        <div id="ctl00_page_Content_guomingshi_pointMark" class="hasPoints" title="考核值：1"></div>
+    </div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>暴露史</th>
+                                    <td colspan="4">
+                                        
+<div style="float: left">
+    
+<div>
+    <div class="floatLeft ">
+        <label class=""></label>
+    </div>
+    <div class="floatLeft marginLeft5px">
+        <div class="floatLeft">
+            <span id="ctl00_page_Content_baoloushi_rtb_radioList1" disabled="disabled" class="complexTextBox"><span disabled="disabled"><input id="ctl00_page_Content_baoloushi_rtb_radioList1_0" type="radio" name="ctl00$page_Content$baoloushi$rtb$radioList1" value="0" checked="checked" disabled="disabled" /><label for="ctl00_page_Content_baoloushi_rtb_radioList1_0">无</label></span><span disabled="disabled"><input id="ctl00_page_Content_baoloushi_rtb_radioList1_1" type="radio" name="ctl00$page_Content$baoloushi$rtb$radioList1" value="1" disabled="disabled" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$page_Content$baoloushi$rtb$radioList1$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ctl00_page_Content_baoloushi_rtb_radioList1_1">有</label></span></span>
+        </div>
+        <div class="floatLeft">
+            化学品&nbsp;<input name="ctl00$page_Content$baoloushi$rtb$tb" type="text" maxlength="50" id="ctl00_page_Content_baoloushi_rtb_tb" disabled="disabled" />&nbsp;
+        </div>
+        <div id="ctl00_page_Content_baoloushi_rtb_pointMark"></div>
+    </div>
+</div>
+
+</div>
+<div style="float: left;">
+    <div style="float: left;">
+        
+<div class="formBox">
+    <label class="">毒物</label>
+    <input name="ctl00$page_Content$baoloushi$ltb1$tb" type="text" maxlength="50" id="ctl00_page_Content_baoloushi_ltb1_tb" disabled="disabled" />&nbsp;<div id="ctl00_page_Content_baoloushi_ltb1_pointMark"></div>
+</div>
+
+    </div>
+    <div style="float: left;">
+        
+<div class="formBox">
+    <label class="">射线</label>
+    <input name="ctl00$page_Content$baoloushi$ltb2$tb" type="text" maxlength="50" id="ctl00_page_Content_baoloushi_ltb2_tb" disabled="disabled" />&nbsp;<div id="ctl00_page_Content_baoloushi_ltb2_pointMark"></div>
+</div>
+
+    </div>
+</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="4">既往史</th>
+                                    <th>疾病</th>
+                                    <td colspan="3">
+                                        
+
+<div class="row marginLeft5px">
+    <div class="floatLeft">
+        <div class="floatLeft ">
+            <span id="ctl00_page_Content_jibing_radioList1" disabled="disabled" class="complexTextBox"><span disabled="disabled"><input id="ctl00_page_Content_jibing_radioList1_0" type="radio" name="ctl00$page_Content$jibing$radioList1" value="0" checked="checked" disabled="disabled" /><label for="ctl00_page_Content_jibing_radioList1_0">无</label></span><span disabled="disabled"><input id="ctl00_page_Content_jibing_radioList1_1" type="radio" name="ctl00$page_Content$jibing$radioList1" value="1" disabled="disabled" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$page_Content$jibing$radioList1$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ctl00_page_Content_jibing_radioList1_1">有</label></span></span>
+        </div>
+        <div class="floatLeft">
+            
+        </div>
+    </div>
+</div>
+<div id="ctl00_page_Content_jibing_content" class="row marginLeft5px">
+			
+
+
+		</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>手术</th>
+                                    <td colspan="3">
+                                        
+
+<div class="row marginLeft5px">
+    <div class="floatLeft">
+        <div class="floatLeft ">
+            <span id="ctl00_page_Content_shoushu_radioList1" disabled="disabled" class="complexTextBox"><span disabled="disabled"><input id="ctl00_page_Content_shoushu_radioList1_0" type="radio" name="ctl00$page_Content$shoushu$radioList1" value="0" checked="checked" disabled="disabled" /><label for="ctl00_page_Content_shoushu_radioList1_0">无</label></span><span disabled="disabled"><input id="ctl00_page_Content_shoushu_radioList1_1" type="radio" name="ctl00$page_Content$shoushu$radioList1" value="1" disabled="disabled" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$page_Content$shoushu$radioList1$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ctl00_page_Content_shoushu_radioList1_1">有</label></span></span>
+        </div>
+        <div class="floatLeft">
+            
+        </div>
+    </div>
+</div>
+<div id="ctl00_page_Content_shoushu_content" class="row marginLeft5px">
+			
+
+
+		</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>外伤</th>
+                                    <td colspan="3">
+                                        
+
+<div class="row marginLeft5px">
+    <div class="floatLeft">
+        <div class="floatLeft ">
+            <span id="ctl00_page_Content_waishang_radioList1" disabled="disabled" class="complexTextBox"><span disabled="disabled"><input id="ctl00_page_Content_waishang_radioList1_0" type="radio" name="ctl00$page_Content$waishang$radioList1" value="0" checked="checked" disabled="disabled" /><label for="ctl00_page_Content_waishang_radioList1_0">无</label></span><span disabled="disabled"><input id="ctl00_page_Content_waishang_radioList1_1" type="radio" name="ctl00$page_Content$waishang$radioList1" value="1" disabled="disabled" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$page_Content$waishang$radioList1$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ctl00_page_Content_waishang_radioList1_1">有</label></span></span>
+        </div>
+        <div class="floatLeft">
+            
+        </div>
+    </div>
+</div>
+<div id="ctl00_page_Content_waishang_content" class="row marginLeft5px">
+			
+
+
+		</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>输血</th>
+                                    <td colspan="3">
+                                        
+
+<div class="row marginLeft5px">
+    <div class="floatLeft">
+        <div class="floatLeft ">
+            <span id="ctl00_page_Content_shuxue_radioList1" disabled="disabled" class="complexTextBox"><span disabled="disabled"><input id="ctl00_page_Content_shuxue_radioList1_0" type="radio" name="ctl00$page_Content$shuxue$radioList1" value="0" checked="checked" disabled="disabled" /><label for="ctl00_page_Content_shuxue_radioList1_0">无</label></span><span disabled="disabled"><input id="ctl00_page_Content_shuxue_radioList1_1" type="radio" name="ctl00$page_Content$shuxue$radioList1" value="1" disabled="disabled" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$page_Content$shuxue$radioList1$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ctl00_page_Content_shuxue_radioList1_1">有</label></span></span>
+        </div>
+        <div class="floatLeft">
+            
+        </div>
+    </div>
+</div>
+<div id="ctl00_page_Content_shuxue_content" class="row marginLeft5px">
+			
+
+
+		</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>家族史</th>
+                                    <td colspan="4">
+                                        
+
+<div class="row marginLeft5px">
+    <div class="floatLeft">
+        <div class="floatLeft ">
+            <span id="ctl00_page_Content_jiazushi_radioList1" disabled="disabled" class="complexTextBox"><span disabled="disabled"><input id="ctl00_page_Content_jiazushi_radioList1_0" type="radio" name="ctl00$page_Content$jiazushi$radioList1" value="0" checked="checked" disabled="disabled" /><label for="ctl00_page_Content_jiazushi_radioList1_0">无</label></span><span disabled="disabled"><input id="ctl00_page_Content_jiazushi_radioList1_1" type="radio" name="ctl00$page_Content$jiazushi$radioList1" value="1" disabled="disabled" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$page_Content$jiazushi$radioList1$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ctl00_page_Content_jiazushi_radioList1_1">有</label></span></span>
+        </div>
+        <div class="floatLeft">
+            
+        </div>
+    </div>
+</div>
+<div id="ctl00_page_Content_jiazushi_content" class="row marginLeft5px">
+			
+
+
+		</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>遗传病史</th>
+                                    <td colspan="4">
+                                        
+<div>
+    <div class="floatLeft ">
+        <label class=""></label>
+    </div>
+    <div class="floatLeft marginLeft5px">
+        <div class="floatLeft">
+            <span id="ctl00_page_Content_ycbs_radioList1" disabled="disabled" class="complexTextBox" data-points="1" data-finishedpoint="1"><span disabled="disabled"><input id="ctl00_page_Content_ycbs_radioList1_0" type="radio" name="ctl00$page_Content$ycbs$radioList1" value="0" checked="checked" disabled="disabled" /><label for="ctl00_page_Content_ycbs_radioList1_0">无</label></span><span disabled="disabled"><input id="ctl00_page_Content_ycbs_radioList1_1" type="radio" name="ctl00$page_Content$ycbs$radioList1" value="1" disabled="disabled" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$page_Content$ycbs$radioList1$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ctl00_page_Content_ycbs_radioList1_1">有</label></span></span>
+        </div>
+        <div class="floatLeft">
+            疾病名称&nbsp;<input name="ctl00$page_Content$ycbs$tb" type="text" maxlength="50" id="ctl00_page_Content_ycbs_tb" disabled="disabled" />&nbsp;
+        </div>
+        <div id="ctl00_page_Content_ycbs_pointMark" class="hasPoints" title="考核值：1"></div>
+    </div>
+</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>伤残情况</th>
+                                    <td colspan="4">
+                                        
+<div>
+    <div class="floatLeft ">
+        <label class=""></label>
+    </div>
+    <div class="floatLeft marginLeft5px">
+        <div class="floatLeft">
+            <span id="ctl00_page_Content_cjqk_chkList1" disabled="disabled" class="complexTextBox" data-points="1" data-finishedpoint="1"><span disabled="disabled"><input id="ctl00_page_Content_cjqk_chkList1_0" type="checkbox" name="ctl00$page_Content$cjqk$chkList1$0" checked="checked" disabled="disabled" /><label for="ctl00_page_Content_cjqk_chkList1_0">无</label></span><span disabled="disabled"><input id="ctl00_page_Content_cjqk_chkList1_1" type="checkbox" name="ctl00$page_Content$cjqk$chkList1$1" disabled="disabled" /><label for="ctl00_page_Content_cjqk_chkList1_1">视力残疾</label></span><span disabled="disabled"><input id="ctl00_page_Content_cjqk_chkList1_2" type="checkbox" name="ctl00$page_Content$cjqk$chkList1$2" disabled="disabled" /><label for="ctl00_page_Content_cjqk_chkList1_2">听力残疾</label></span><span disabled="disabled"><input id="ctl00_page_Content_cjqk_chkList1_3" type="checkbox" name="ctl00$page_Content$cjqk$chkList1$3" disabled="disabled" /><label for="ctl00_page_Content_cjqk_chkList1_3">言语残疾</label></span><span disabled="disabled"><input id="ctl00_page_Content_cjqk_chkList1_4" type="checkbox" name="ctl00$page_Content$cjqk$chkList1$4" disabled="disabled" /><label for="ctl00_page_Content_cjqk_chkList1_4">肢体残疾</label></span><span disabled="disabled"><input id="ctl00_page_Content_cjqk_chkList1_5" type="checkbox" name="ctl00$page_Content$cjqk$chkList1$5" disabled="disabled" /><label for="ctl00_page_Content_cjqk_chkList1_5">智力残疾</label></span><span disabled="disabled"><input id="ctl00_page_Content_cjqk_chkList1_6" type="checkbox" name="ctl00$page_Content$cjqk$chkList1$6" disabled="disabled" /><label for="ctl00_page_Content_cjqk_chkList1_6">精神残疾</label></span><span disabled="disabled"><input id="ctl00_page_Content_cjqk_chkList1_7" type="checkbox" name="ctl00$page_Content$cjqk$chkList1$7" disabled="disabled" /><label for="ctl00_page_Content_cjqk_chkList1_7">其他</label></span><span disabled="disabled"><input id="ctl00_page_Content_cjqk_chkList1_8" type="checkbox" name="ctl00$page_Content$cjqk$chkList1$8" disabled="disabled" /><label for="ctl00_page_Content_cjqk_chkList1_8">其他</label></span></span>
+        </div>
+        <div class="floatLeft">
+            <input name="ctl00$page_Content$cjqk$tb" type="text" maxlength="50" id="ctl00_page_Content_cjqk_tb" disabled="disabled" />
+        </div>
+        <div id="ctl00_page_Content_cjqk_pointMark" class="hasPoints" title="考核值：1"></div>
+    </div>
+</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="5">生活环境</th>
+                                    <th>厨房排风设施</th>
+                                    <td colspan="3">
+                                        
+<div>
+    <div class="floatLeft ">
+        <label class=""></label>
+    </div>
+    <div class="floatLeft marginLeft5px">
+        <div class="floatLeft">
+            <span id="ctl00_page_Content_pfss_radioList1" disabled="disabled" class="complexTextBox"><span disabled="disabled"><input id="ctl00_page_Content_pfss_radioList1_0" type="radio" name="ctl00$page_Content$pfss$radioList1" value="0" disabled="disabled" /><label for="ctl00_page_Content_pfss_radioList1_0">未知</label></span><span disabled="disabled"><input id="ctl00_page_Content_pfss_radioList1_1" type="radio" name="ctl00$page_Content$pfss$radioList1" value="1" disabled="disabled" /><label for="ctl00_page_Content_pfss_radioList1_1">无</label></span><span disabled="disabled"><input id="ctl00_page_Content_pfss_radioList1_2" type="radio" name="ctl00$page_Content$pfss$radioList1" value="2" disabled="disabled" /><label for="ctl00_page_Content_pfss_radioList1_2">油烟机</label></span><span disabled="disabled"><input id="ctl00_page_Content_pfss_radioList1_3" type="radio" name="ctl00$page_Content$pfss$radioList1" value="3" checked="checked" disabled="disabled" /><label for="ctl00_page_Content_pfss_radioList1_3">换气扇</label></span><span disabled="disabled"><input id="ctl00_page_Content_pfss_radioList1_4" type="radio" name="ctl00$page_Content$pfss$radioList1" value="4" disabled="disabled" /><label for="ctl00_page_Content_pfss_radioList1_4">烟囱</label></span></span>
+        </div>
+        <div class="floatLeft">
+            &nbsp;
+        </div>
+        <div id="ctl00_page_Content_pfss_pointMark"></div>
+    </div>
+</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>燃料类型</th>
+                                    <td colspan="3">
+                                        
+<div>
+    <div class="floatLeft ">
+        <label class=""></label>
+    </div>
+    <div class="floatLeft marginLeft5px">
+        <div class="floatLeft">
+            <span id="ctl00_page_Content_rllx_radioList1" disabled="disabled" class="complexTextBox"><span disabled="disabled"><input id="ctl00_page_Content_rllx_radioList1_0" type="radio" name="ctl00$page_Content$rllx$radioList1" value="0" disabled="disabled" /><label for="ctl00_page_Content_rllx_radioList1_0">未知</label></span><span disabled="disabled"><input id="ctl00_page_Content_rllx_radioList1_1" type="radio" name="ctl00$page_Content$rllx$radioList1" value="1" checked="checked" disabled="disabled" /><label for="ctl00_page_Content_rllx_radioList1_1">液化气</label></span><span disabled="disabled"><input id="ctl00_page_Content_rllx_radioList1_2" type="radio" name="ctl00$page_Content$rllx$radioList1" value="2" disabled="disabled" /><label for="ctl00_page_Content_rllx_radioList1_2">煤</label></span><span disabled="disabled"><input id="ctl00_page_Content_rllx_radioList1_3" type="radio" name="ctl00$page_Content$rllx$radioList1" value="3" disabled="disabled" /><label for="ctl00_page_Content_rllx_radioList1_3">天然气</label></span><span disabled="disabled"><input id="ctl00_page_Content_rllx_radioList1_4" type="radio" name="ctl00$page_Content$rllx$radioList1" value="4" disabled="disabled" /><label for="ctl00_page_Content_rllx_radioList1_4">沼气</label></span><span disabled="disabled"><input id="ctl00_page_Content_rllx_radioList1_5" type="radio" name="ctl00$page_Content$rllx$radioList1" value="5" disabled="disabled" /><label for="ctl00_page_Content_rllx_radioList1_5">柴火</label></span><span disabled="disabled"><input id="ctl00_page_Content_rllx_radioList1_6" type="radio" name="ctl00$page_Content$rllx$radioList1" value="6" disabled="disabled" /><label for="ctl00_page_Content_rllx_radioList1_6">其他</label></span></span>
+        </div>
+        <div class="floatLeft">
+            &nbsp;
+        </div>
+        <div id="ctl00_page_Content_rllx_pointMark"></div>
+    </div>
+</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>饮水</th>
+                                    <td colspan="3">
+                                        
+<div>
+    <div class="floatLeft ">
+        <label class=""></label>
+    </div>
+    <div class="floatLeft marginLeft5px">
+        <div class="floatLeft">
+            <span id="ctl00_page_Content_yins_radioList1" disabled="disabled" class="complexTextBox"><span disabled="disabled"><input id="ctl00_page_Content_yins_radioList1_0" type="radio" name="ctl00$page_Content$yins$radioList1" value="0" disabled="disabled" /><label for="ctl00_page_Content_yins_radioList1_0">未知</label></span><span disabled="disabled"><input id="ctl00_page_Content_yins_radioList1_1" type="radio" name="ctl00$page_Content$yins$radioList1" value="1" checked="checked" disabled="disabled" /><label for="ctl00_page_Content_yins_radioList1_1">自来水</label></span><span disabled="disabled"><input id="ctl00_page_Content_yins_radioList1_2" type="radio" name="ctl00$page_Content$yins$radioList1" value="2" disabled="disabled" /><label for="ctl00_page_Content_yins_radioList1_2">经净化过滤的水</label></span><span disabled="disabled"><input id="ctl00_page_Content_yins_radioList1_3" type="radio" name="ctl00$page_Content$yins$radioList1" value="3" disabled="disabled" /><label for="ctl00_page_Content_yins_radioList1_3">井水</label></span><span disabled="disabled"><input id="ctl00_page_Content_yins_radioList1_4" type="radio" name="ctl00$page_Content$yins$radioList1" value="4" disabled="disabled" /><label for="ctl00_page_Content_yins_radioList1_4">河湖水</label></span><span disabled="disabled"><input id="ctl00_page_Content_yins_radioList1_5" type="radio" name="ctl00$page_Content$yins$radioList1" value="5" disabled="disabled" /><label for="ctl00_page_Content_yins_radioList1_5">塘水</label></span><span disabled="disabled"><input id="ctl00_page_Content_yins_radioList1_6" type="radio" name="ctl00$page_Content$yins$radioList1" value="6" disabled="disabled" /><label for="ctl00_page_Content_yins_radioList1_6">其他</label></span></span>
+        </div>
+        <div class="floatLeft">
+            &nbsp;
+        </div>
+        <div id="ctl00_page_Content_yins_pointMark"></div>
+    </div>
+</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>厕所</th>
+                                    <td colspan="3">
+                                        
+<div>
+    <div class="floatLeft ">
+        <label class=""></label>
+    </div>
+    <div class="floatLeft marginLeft5px">
+        <div class="floatLeft">
+            <span id="ctl00_page_Content_ces_radioList1" disabled="disabled" class="complexTextBox"><span disabled="disabled"><input id="ctl00_page_Content_ces_radioList1_0" type="radio" name="ctl00$page_Content$ces$radioList1" value="0" disabled="disabled" /><label for="ctl00_page_Content_ces_radioList1_0">未知</label></span><span disabled="disabled"><input id="ctl00_page_Content_ces_radioList1_1" type="radio" name="ctl00$page_Content$ces$radioList1" value="1" disabled="disabled" /><label for="ctl00_page_Content_ces_radioList1_1">卫生厕所</label></span><span disabled="disabled"><input id="ctl00_page_Content_ces_radioList1_2" type="radio" name="ctl00$page_Content$ces$radioList1" value="2" checked="checked" disabled="disabled" /><label for="ctl00_page_Content_ces_radioList1_2">一格或二格粪池式</label></span><span disabled="disabled"><input id="ctl00_page_Content_ces_radioList1_3" type="radio" name="ctl00$page_Content$ces$radioList1" value="3" disabled="disabled" /><label for="ctl00_page_Content_ces_radioList1_3">马桶</label></span><span disabled="disabled"><input id="ctl00_page_Content_ces_radioList1_4" type="radio" name="ctl00$page_Content$ces$radioList1" value="4" disabled="disabled" /><label for="ctl00_page_Content_ces_radioList1_4">露天粪坑</label></span><span disabled="disabled"><input id="ctl00_page_Content_ces_radioList1_5" type="radio" name="ctl00$page_Content$ces$radioList1" value="5" disabled="disabled" /><label for="ctl00_page_Content_ces_radioList1_5">简易棚厕</label></span></span>
+        </div>
+        <div class="floatLeft">
+            &nbsp;
+        </div>
+        <div id="ctl00_page_Content_ces_pointMark"></div>
+    </div>
+</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>禽畜栏</th>
+                                    <td colspan="3">
+                                        
+<div>
+    <div class="floatLeft ">
+        <label class=""></label>
+    </div>
+    <div class="floatLeft marginLeft5px">
+        <div class="floatLeft">
+            <span id="ctl00_page_Content_qcl_radioList1" disabled="disabled" class="complexTextBox"><span disabled="disabled"><input id="ctl00_page_Content_qcl_radioList1_0" type="radio" name="ctl00$page_Content$qcl$radioList1" value="0" checked="checked" disabled="disabled" /><label for="ctl00_page_Content_qcl_radioList1_0">未知</label></span><span disabled="disabled"><input id="ctl00_page_Content_qcl_radioList1_1" type="radio" name="ctl00$page_Content$qcl$radioList1" value="1" disabled="disabled" /><label for="ctl00_page_Content_qcl_radioList1_1">单设</label></span><span disabled="disabled"><input id="ctl00_page_Content_qcl_radioList1_2" type="radio" name="ctl00$page_Content$qcl$radioList1" value="2" disabled="disabled" /><label for="ctl00_page_Content_qcl_radioList1_2">室内</label></span><span disabled="disabled"><input id="ctl00_page_Content_qcl_radioList1_3" type="radio" name="ctl00$page_Content$qcl$radioList1" value="3" disabled="disabled" /><label for="ctl00_page_Content_qcl_radioList1_3">室外</label></span></span>
+        </div>
+        <div class="floatLeft">
+            &nbsp;
+        </div>
+        <div id="ctl00_page_Content_qcl_pointMark"></div>
+    </div>
+</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>建档时间</th>
+                                    <td colspan="2">
+                                        
+<div class="">
+    <label class=""></label>
+    <input name="ctl00$page_Content$jdrq$tb" type="text" value="2011-12-20" maxlength="10" id="ctl00_page_Content_jdrq_tb" disabled="disabled" class=" date-picker required" />&nbsp;<div id="ctl00_page_Content_jdrq_pointMark"></div>
+</div>
+
+                                    </td>
+                                    <th>建档人</th>
+                                    <td>
+                                        
+<div style="float: left;">
+    
+<div class="">
+    <label class=""></label>
+    <input name="ctl00$page_Content$jdr$ltb1$tb" type="text" value="健康档案-陈明涛" readonly="readonly" id="ctl00_page_Content_jdr_ltb1_tb" disabled="disabled" />&nbsp;<div id="ctl00_page_Content_jdr_ltb1_pointMark"></div>
+</div>
+
+</div>
+<div style="float: left;">
+    
+<div class="formBox">
+    <label class="">　　建档单位</label>
+    <input name="ctl00$page_Content$jdr$ltb2$tb" type="text" value="马营乡杨屯村卫生室" readonly="readonly" id="ctl00_page_Content_jdr_ltb2_tb" disabled="disabled" />&nbsp;<div id="ctl00_page_Content_jdr_ltb2_pointMark"></div>
+</div>
+
+</div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+            
+<div class="clearfix form-actions float-bottom" id="detailsActions" data-target="#detailsActions">
+    <div class="col-md-offset-3 col-md-9 ">
+        <ul class="ulHorizontalButton">
+            <li>
+                <button onclick="__doPostBack('ctl00$page_Content$DetailsPageActions$btnEdit','')" id="ctl00_page_Content_DetailsPageActions_btnEdit" class="btn btn-primary" type="reset" isJDDW="False">
+                    <i class="ace-icon fa fa-unlock bigger-110 "></i>修改
+                </button>
+            </li>
+            <li>
+                
+            </li>
+            <li>
+                
+            </li>
+            <li>
+                
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <script>
+        function onSumbit() {
+            $("#ctl00_page_Content_DetailsPageActions_btnCancel").attr("disabled", "true");
+            }
+    </script>
+
+
+        </div>
+    </div>
+
+
+
+                        
+	</div>
+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+            </div>
+            
+
+            <a href="#" title="返回顶部" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+                <i class="ace-icon fa fa-angle-double-up icon-only bigger-200"></i>
+            </a>
+        </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxManager, {"_updatePanels":"","ajaxSettings":[],"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"defaultLoadingPanelID":"","enableAJAX":true,"enableHistory":false,"links":[],"styles":[],"uniqueID":"ctl00$RadAjaxManager1","updatePanelsRenderMode":0}, null, null, $get("ctl00_RadAjaxManager1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxLoadingPanel, {"initialDelayTime":0,"isSticky":false,"minDisplayTime":0,"skin":"Windows7","uniqueID":"ctl00$RadAjaxLoadingPanel1","zIndex":90000}, null, null, $get("ctl00_RadAjaxLoadingPanel1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxPanel, {"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"enableAJAX":true,"enableHistory":false,"links":[],"loadingPanelID":"","styles":[],"uniqueID":"ctl00$RadAjaxPanel1"}, null, null, $get("ctl00_RadAjaxPanel1"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>
