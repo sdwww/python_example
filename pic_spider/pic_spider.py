@@ -51,6 +51,7 @@ def getimagelist(webUrl):
     pagelist = soup.findAll('img')
     for page in pagelist:
         try:
+            alt=page['alt'].replace('/',' ').replace('?',' ').replace('\\',' ')
             list.append(page['alt'])
             list.append(page['r-lazyload'])
         except:
@@ -69,5 +70,5 @@ if __name__ == "__main__":
         getimagelist(webUrl)
         print(i)
     print(list.__len__())
-    creatManyThreads(5)
+    creatManyThreads(8)
     print('总时间为:', time.clock() - start)
