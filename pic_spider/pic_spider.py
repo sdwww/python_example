@@ -12,7 +12,7 @@ def saveImage(local_num):
     with open(DstDir + list[local_num * 2] + '.jpg', "wb") as jpg:
         jpg.write(image)
         jpg.close
-    if getsize(DstDir + list[local_num * 2] + '.jpg') < 2000:
+    if getsize(DstDir + list[local_num * 2] + '.jpg') < 10000:
         os.remove(DstDir + list[local_num * 2] + '.jpg')
         return False
     return True
@@ -51,8 +51,7 @@ def getimagelist(webUrl):
     pagelist = soup.findAll('img')
     for page in pagelist:
         try:
-            alt=page['alt'].replace('?',' ').replace('/',' ').replace('\\',' ')
-            list.append(alt)
+            list.append(page['alt'])
             list.append(page['r-lazyload'])
         except:
             pass
@@ -69,5 +68,6 @@ if __name__ == "__main__":
         webUrl = 'http://v.qq.com/x/teleplaylist/?sort=4&offset=' + str(i*20) + '&itype=-1'
         getimagelist(webUrl)
         print(i)
-    creatManyThreads(10)
+    print(list.__len__())
+    creatManyThreads(5)
     print('总时间为:', time.clock() - start)
