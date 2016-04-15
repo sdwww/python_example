@@ -1,69 +1,73 @@
 import requests
 import threading
 from bs4 import BeautifulSoup
-import re
 import time
+import os
+from os.path import getsize
 
 
-def saveImage(imgUrl, imgName="default.jpg"):
-    response = requests.get(imgUrl, stream=True)
+def saveImage(local_num):
+    response = session.get(list[local_num * 2 + 1], stream=True)
     image = response.content
-    DstDir = "C:/Users/www/Pictures/test/"
-    print("保存文件" + DstDir + imgName)
-    try:
-        with open(DstDir + imgName, "wb") as jpg:
-            jpg.write(image)
-    except IOError:
-        print("IO Error\n")
-        return
-    finally:
+    with open(DstDir + list[local_num * 2] + '.jpg', "wb") as jpg:
+        jpg.write(image)
         jpg.close
+    if getsize(DstDir + list[local_num * 2] + '.jpg') < 10000:
+        os.remove(DstDir + list[local_num * 2] + '.jpg')
+        return False
+    return True
 
 
-def downImageViaMutiThread(filelist):
-    task_threads = []  # 存储线程
-    count = 1
-    for file in filelist:
-        filename = file.replace("/", "-")
-        if 'com-' in filename:
-            p = re.compile(r'com-')
-            filename = p.split(filename)[1]
-            t = threading.Thread(target=saveImage, args=(file, filename))
-            count = count + 1
-            task_threads.append(t)
-    for task in task_threads:
-        task.start()
-    for task in task_threads:
-        task.join()
+class myThread(threading.Thread):
+    def __init__(self, name):
+        threading.Thread.__init__(self)
+        self.t_name = name
+
+    def run(self):
+        global num  # 声明为全局变量
+        while num < len(list) / 2:
+            mylock.acquire()
+            local_num = num
+            num += 1
+            mylock.release()
+            if saveImage(local_num):
+                print("保存文件" + DstDir + list[local_num * 2] + '.jpg', self.name)
+        time.sleep(0.1)
 
 
-def getfilelist(pageUrl):
-    try:
-        filelist = []
-        web = requests.get(pageUrl)
-        soup = BeautifulSoup(web.text, 'lxml')
-        for photo in soup.find_all('img'):
-            filelist.append(photo.get('src'))
-    except:
-        pass
-    return filelist
+def creatManyThreads(count):
+    threads = []
+    for i in range(count):
+        myth = myThread(i)
+        myth.start()
+        threads.append(myth)
+    for thread in threads:
+        thread.join()
 
 
-def getweblist(webUrl):
+def getimagelist(webUrl):
     web = requests.get(webUrl)
     soup = BeautifulSoup(web.text, 'lxml')
-    weblist = []
-    for pagelist in soup.find_all('a'):
-        if len(weblist) < 20:
-            weblist.append(pagelist.get('href'))
-    return weblist
+    pagelist = soup.findAll('img')
+    for page in pagelist:
+        try:
+            list.append(page['alt'])
+            list.append(page['r-lazyload'])
+        except:
+            pass
 
 
 if __name__ == "__main__":
     start = time.clock()
-    webUrl = 'http://www.csdn.net/'
-    list = getweblist(webUrl)
-    for page in list:
-        imagelist = getfilelist(page)
-        downImageViaMutiThread(imagelist)
+    mylock = threading.RLock()
+    num = 0
+    list = []
+    session = requests.session()
+    DstDir = "C:/Users/www/Pictures/test/"
+    for i in range(250):
+        webUrl = 'http://v.qq.com/x/teleplaylist/?sort=4&offset=' + str(i*20) + '&itype=-1'
+        getimagelist(webUrl)
+        print(i)
+    print(list.__len__())
+    creatManyThreads(5)
     print('总时间为:', time.clock() - start)
