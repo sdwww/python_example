@@ -272,11 +272,12 @@ if __name__ == "__main__":
     allFiles = getAllFile(dirname=dir)
     count = 0
     for allFile in allFiles:
-        soup = BeautifulSoup(open(dir + '\\' + allFile, encoding="utf-8"), "lxml")
-        basic = getBasicInfo(soup)
-        detail = getDetailInfo(soup)
-        basic.extend(detail)
-        data_insert('健康体检',basic)
+        if count>2368:
+            soup = BeautifulSoup(open(dir + '\\' + allFile, encoding="utf-8"), "lxml")
+            basic = getBasicInfo(soup)
+            detail = getDetailInfo(soup)
+            basic.extend(detail)
+            data_insert('健康体检',basic)
         print(count)
         count += 1
     cur.close()

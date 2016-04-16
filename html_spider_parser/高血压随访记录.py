@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import time
 import os
 import pymysql
+import re
 
 
 def getAllFile(dirname):
@@ -38,11 +39,28 @@ def radiobox(soup, id_content):
         values = 'None'
     return values
 
+def option(soup, id_content):
+    try:
+        values = str(soup.find(attrs={"id": id_content}).find(attrs={"selected": "selected"}).string)
+    except:
+        values='None'
+    return values
+
 
 def getYongYao(soup):
-    yongyao = ''
-    if soup.find(attrs={"checked": "checked", "id": 'ctl00_page_Content_chilie_yx0'}):
-        yongyao += soup.find(attrs={"checked": "checked", "id": 'ctl00_page_Content_chilie_yx0'}).next_sibling.string
+    yongyao = radiobox(soup, "ctl00_page_Content_ywqkList_radioList1")
+    yaopins=soup.findAll(attrs={"name": re.compile("ctl00_page_Content_ywqkList_LabelTextBox2_div_ltb3")})
+    for yaopin in yaopins:
+        if yaopin.get('value'):
+            yongyao+=' '+yaopin.get('value')
+    yongliangs=soup.findAll(attrs={"name": re.compile("ctl00\$page_Content\$ywqkList\$LabelTextBox2_div")})
+    for yongliang in yongliangs:
+        if yongliang.get('value'):
+            yongyao+=' '+yongliang.get('value')
+    meicis=soup.findAll(attrs={"id": re.compile("ctl00_page_Content_ywqkList_LabelTextBox2_2_div_ltb3")})
+    for meici in meicis:
+        if meici.get('value'):
+            yongyao+=' '+meici.get('value')
     return yongyao
 
 
@@ -96,6 +114,14 @@ def getDetailInfo(soup):
                       + ' ' + str(soup.find(attrs={"id": "ctl00_page_Content_ywblfy_tb"}).get('value')))
     DetailInfo.append(radiobox(soup, "ctl00_page_Content_sffl_radioList1"))
     DetailInfo.append(getYongYao(soup))
+    DetailInfo.append(str(soup.find(attrs={"id": "ctl00_page_Content_zzyy_tb"}).get('value')))
+    DetailInfo.append(option(soup, "ctl00_page_Content_zzkb_ddl"))
+    DetailInfo.append(str(soup.find(attrs={"id": "ctl00_page_Content_xcsfrq_tb"}).get('value')))
+    DetailInfo.append(str(soup.find(attrs={"id": "ctl00_page_Content_sfys_tb"}).get('value')))
+    DetailInfo.append(str(soup.find(attrs={"id": "ctl00_page_Content_jldarq_tb"}).get('value')))
+    DetailInfo.append(str(soup.find(attrs={"id": "ctl00_page_Content_jdr_ltb1_tb"}).get('value')))
+    DetailInfo.append(str(soup.find(attrs={"id": "ctl00_page_Content_jdr_ltb2_tb"}).get('value')))
+
     return DetailInfo
 
 
@@ -103,16 +129,17 @@ if __name__ == "__main__":
     start = time.clock()
     conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='spider_data', charset='utf8')
     cur = conn.cursor()
-    dir = 'D:\爬虫数据-医疗\爬虫数据-医疗-王伟伟\www-爬虫数据\爬虫原始数据\健康体检'
+    dir = 'D:\爬虫数据-医疗\爬虫数据-医疗-王伟伟\www-爬虫数据\爬虫原始数据\高血压随访记录'
     allFiles = getAllFile(dirname=dir)
     count = 0
     for allFile in allFiles:
-        soup = BeautifulSoup(open(dir + '\\' + allFile, encoding="utf-8"), "lxml")
-        basic = getBasicInfo(soup)
-        detail = getDetailInfo(soup)
-        basic.extend(detail)
-        data_insert('健康体检', basic)
-        print(count)
+        if count>312:
+            soup = BeautifulSoup(open(dir + '\\' + allFile, encoding="utf-8"), "lxml")
+            basic = getBasicInfo(soup)
+            detail = getDetailInfo(soup)
+            basic.extend(detail)
+            data_insert('高血压随访记录', basic)
+            print(count)
         count += 1
     cur.close()
     conn.close()
