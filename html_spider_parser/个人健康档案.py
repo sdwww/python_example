@@ -8,18 +8,17 @@ def getAllFile(dirname):
     all_file = []
     for dirpath, dirnames, filenames in os.walk(dirname):
         for filename in filenames:
-            # print(filename)
             all_file.append(filename)
     return all_file
 
 
 start = time.clock()
 conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='spider_data', charset='utf8')
-dir = 'C:\\Users\www\Desktop\文件\爬虫原始数据\个人健康档案'
+dir = 'D:\爬虫数据-医疗\爬虫数据-医疗-王伟伟\www-爬虫数据\爬虫原始数据\个人健康档案'
 allFiles = getAllFile(dirname=dir)
-count=0
+count = 0
 for allFile in allFiles:
-    count+=1
+    count += 1
     soup = BeautifulSoup(open(dir + '\\' + allFile, encoding="utf-8"), "lxml")
     v0 = str(soup.find(attrs={"name": "ctl00$page_Content$grdabh$tb"})['value'])
     v1 = str(soup.find(attrs={"name": "ctl00$page_Content$ryxm$tb"})['value'])

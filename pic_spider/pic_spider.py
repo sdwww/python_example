@@ -51,8 +51,8 @@ def getimagelist(webUrl):
     pagelist = soup.findAll('img')
     for page in pagelist:
         try:
-            alt=page['alt'].replace('/',' ').replace('?',' ').replace('\\',' ')
-            list.append(page['alt'])
+            alt=page['alt'].replace('/','-').replace('?','-').replace('\\','-').replace('|','-')
+            list.append(alt)
             list.append(page['r-lazyload'])
         except:
             pass
